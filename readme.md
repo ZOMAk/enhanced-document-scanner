@@ -175,37 +175,4 @@ The scanner uses YOLO11 for state-of-the-art human detection:
 2. **Adaptive Histogram Equalization**: CLAHE for local contrast enhancement
 3. **Noise Reduction**: Non-local means denoising for clean results
 
-## 📊 Performance Features
-
-- **Memory Efficient**: Optimized for large image batches
-- **Progress Tracking**: Real-time processing status
-- **Error Handling**: Graceful failure recovery
-- **Temporary File Management**: Automatic cleanup of intermediate files
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Environment Activation**
-```bash
-# Make sure to activate the environment before running
-conda activate scanner
-```
-
-**CUDA Issues**
-```bash
-# Check CUDA availability
-python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
-
-# If CUDA not available, reinstall PyTorch
-conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
-```
-
-**"ultralytics not found" Error**
-```bash
-conda install conda-forge::ultralytics
-```
-
 ---
-
-**Made with ❤️ for the document scanning community**
