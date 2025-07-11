@@ -18,6 +18,30 @@ An advanced document scanning tool that automatically detects document corners, 
 - **Edge Feathering**: Smooth mask edges using Gaussian blur and morphological operations
 - **Multi-Method Fallback**: Graceful degradation when dependencies are unavailable
 
+## 📸 Processing Examples
+
+See the power of our document scanner in action through these step-by-step examples:
+
+### 1. Automatic Document Detection
+<img src="./examples/1.jpg" alt="Document Corner Detection" width="200"/>
+
+*Intelligent contour analysis automatically detects document boundaries and corner points, even in challenging lighting conditions.*
+
+### 2. Perspective Transformation
+<img src="./examples/2.jpg" alt="Perspective Correction" width="200"/>
+
+*Transform skewed and angled documents into perfect rectangular format using advanced perspective correction algorithms.*
+
+### 3. AI-Powered Human Detection & Removal
+<img src="./examples/3.jpg" alt="Human Detection and Removal" width="200"/>
+
+*YOLO11-powered AI detects and intelligently removes hands/fingers using sophisticated random sampling techniques that preserve document texture.*
+
+### 4. Illumination Correction
+<img src="./examples/4.jpg" alt="Illumination Enhancement" width="200"/>
+
+*Advanced illumination correction using hybrid background subtraction and adaptive histogram equalization for crisp, professional results.*
+
 ## 🖼️ Processing Workflow
 
 ```
@@ -51,7 +75,7 @@ All dependencies are automatically installed through the installation methods be
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/enhanced-document-scanner.git
+git clone https://github.com/ZOMAk/enhanced-document-scanner.git
 cd enhanced-document-scanner
 ```
 
@@ -80,11 +104,6 @@ python scanner.py --folder ./images --image_size A4
 - **NVIDIA GPU** with CUDA 11.8+ support
 - **CUDA Toolkit** 11.8 or later
 - **GPU Memory**: Minimum 4GB VRAM recommended for YOLO11 inference
-
-3. **Run the scanner**
-```bash
-python scanner.py --folder ./images --image_size A4
-```
 
 ## 📖 Usage
 
