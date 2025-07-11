@@ -107,19 +107,26 @@ python scanner.py --folder ./images --image_size A4
 
 ## 📖 Usage
 
+### 🧪 Test Images
+**Note**: Sample test images are provided in the `./data` directory for you to try out the scanner's capabilities before using your own images.
+
 ### Basic Batch Processing
 ```bash
+# Using provided test images
+python scanner.py --folder ./data --image_size A4
+
+# Using your own images
 python scanner.py --folder ./images --image_size A4
 ```
 
 ### Custom Output PDF
 ```bash
-python scanner.py --folder ./images --output_pdf ./scanned_documents.pdf
+python scanner.py --folder ./data --output_pdf ./scanned_documents.pdf
 ```
 
 ### Auto-Calculate Size
 ```bash
-python scanner.py --folder ./images --image_size auto
+python scanner.py --folder ./data --image_size auto
 ```
 
 ### Command Line Arguments
